@@ -85,7 +85,7 @@ isDivisible(5, 2);
 // Write a function called oddNumbers that takes an arbitrary integer as an argument, from 0 to 100. If the number is greater than 40 then output all the odd integers from 40 to the arbitrary number. If the number is less than 40, output all the odd integers from 0 to 40.
 
 function oddNumbers(int1) {
-    if (int1 > 100 && int1 < 0) {
+    if (int1 > 100 || int1 < 0) {
         console.log("Please use a number between 0-100");
     } else if (int1 > 40 && int1 < 100) {
         for (var j = 40; j <= int1; j++) {
